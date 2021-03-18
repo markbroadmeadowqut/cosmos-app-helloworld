@@ -3,7 +3,7 @@ CC = gcc
 .PHONY: clean
 
 hello: helloworld_git.c
-    $(CC) -o '$@' '$<'
+	$(CC) -o '$@' '$<'
 
 clean:
-    rm helloworld_git
+	rm helloworld_git
