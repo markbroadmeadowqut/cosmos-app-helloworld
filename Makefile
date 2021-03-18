@@ -2,7 +2,7 @@ CC = gcc
 
 .PHONY: clean
 
-hello: helloworld_git.c
+helloworld_git: helloworld_git.c
 	$(CC) -o '$@' '$<'
 
 clean:
