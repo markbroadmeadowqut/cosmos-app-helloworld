@@ -1,9 +1,8 @@
-CC = gcc
+APP = helloworld
+CC = gcc	
 
-.PHONY: clean
-
-helloworld_git: helloworld_git.c
-	$(CC) -o '$@' '$<'
+$(APP): $(APP).c
+	$(CC) -o $@ $<
 
 clean:
-	rm helloworld_git
+	rm $(APP)
